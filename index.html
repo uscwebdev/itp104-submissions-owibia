@@ -9,17 +9,35 @@
                 color: darkslategray;
             }
             img {
-                height: 200px;
-                width: auto;
+                height: auto;
+                width: 400px;
             }
+            .container {
+                width: 900px;
+                margin: auto;
+                padding: 15px;
+            }
+
+            .columns {
+                width: 400px;
+                padding: 15px;
+                display: inline-flex;
+                flex-direction: column;
+                margin: auto;
+            }
+                
         </style>
 
     </head>
     <body>
+        <div class="container">
         <h1>Olivia Dien</h1>
 
         <p>Contact me at: <a href="mailto:odien@usc.edu">odien@usc.edu</a></p>
+        
+        <hr>
 
+        <div class="columns">
         <p><strong>This is my favorite color!</strong></p>
 
         <p><a target="_blank" href="https://www.youtube.com/">This is my favorite website!</a></p>
@@ -27,31 +45,41 @@
         <p>What I love to do:</p>
 
         <img src="https://www.usnews.com/dims4/USNEWS/845525a/2147483647/thumbnail/640x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F19%2Fd5%2F36b07e184f6e826424b5aa2687e5%2F201204-fashiondesigner-stock.jpg" alt="fashion designer">
+        </div>
 
+        <div class="columns">
         <p>My Classes:</p>
 
         <ol>
-            <li>ITP104</li>
-            <li>PSYC274</li>
-            <li>PSYC355</li>
-            <li>CORE103</li>
-            <li>EALC117</li>
+            <li>ITP104: Intro to Web Development</li>
+            <li>PSYC274: Statistics</li>
+            <li>PSYC355: Social Psychology</li>
+            <li>CORE103: The Process of Change in Science</li>
+            <li>EALC117: Korean II</li>
         </ol>
-        
+        </div>
+
+        <hr>
+
+        <div class="columns">
         <p>Assignments I've Completed:</p>
 
         <ol>
             <li><a target="_blank" href="assignment_01/resume.html">Assignment 1</a></li>
             <li><a target="_blank" href="assignment_02/hobby.html">Assignment 2</a></li>
         </ol>
+        </div>
 
+        <div class="columns">
         <p>Labs I've Completed:</p>
 
         <ol>
             <li><a target="_blank" href="index.html">Lab 2</a></li>
             <li><a target="_blank" href="lab_03/resume.html">Lab 3</a></li>
+            <li><a target="_blank" href="index.html">Lab 4</a></li>
         </ol>
-
+        </div>
+        </div>
     </body>
 </html>
 
