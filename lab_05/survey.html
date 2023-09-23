@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Singing Contest Registration Form</title>
+
+        <style>
+            h1 {
+                text-align: center;
+            }
+            .center-text {
+                width: 100vw;
+                text-align: center
+            }
+
+            #submit {
+                background-color: maroon;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="confirmation.html">
+        <div class="center-text">
+        <h1>Singing Contest Registration Form</h1>
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" placeholder="Tommy">
+        <p></p>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" placeholder="Trojan">
+        <p></p>
+        <label for="email-id">Email:</label>
+        <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+        <p></p>
+        <label for="phone-num">Phone Number:</label>
+        <input type="text" id="phone-num" placeholder="(123) 456-7890">
+
+        <p>What day would you like to perform on?</p>
+        <input type="radio" name="radio-date">
+        September 23, 2023
+        <input type="radio" name="radio-date">
+        September 24, 2023
+        <input type="radio" name="radio-date">
+        September 25, 2023
+
+        <p>Please indicate any equipment you may require.</p>
+        <input type="checkbox" name="check-equip">
+        Microphone
+        <input type="checkbox" name="check-equip">
+        Ear-piece
+        <input type="checkbox" name="check-equip">
+        Smoke Machine
+
+        <p>Please indicate which song you will be singing.</p>
+        <select>
+            <option value="" disabled selected>Select your option below</option>
+            <option>Since U Been Gone by Kelly Clarkson</option>
+            <option>Sweet Caroline by Neil Diamond</option>
+            <option>I Want It That Way by the Backstreet Boys</option>
+            <option>...Baby One More Time by Britney Spears</option>
+        </select>
+
+        <p></p>
+        Comments:
+        <p></p>
+        <textarea rows="3" cols="40"></textarea>
+
+        <p></p>
+        <input type="checkbox">
+        I accept terms & conditions.
+
+        <p></p>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        </div>
+
+        </form>
+
+    </body>
+</html>
