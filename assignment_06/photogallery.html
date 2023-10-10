@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            h1 {
+                background-image: url(imgs/Fashion-Illustration.webp);
+                width: 100vw;
+                height: 200px;
+                background-size: cover;
+                background-position-y: 12%;
+                margin-top: -12px;
+                text-align: center;
+                line-height: 200px;
+                font-size: 300%;
+                color: white;
+                text-shadow: 4px 4px 7px rgb(0, 0, 0);
+                margin-bottom: -0.00001px;
+            }
+
+            h2 {
+                width: 800px;
+                height: 50px;
+                background-color: white;
+                text-align: center;
+                line-height: 50px;
+                margin: auto;
+                padding-top: 10px;
+                font-size: 170%;
+            }
+
+            #img-placeholder {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 800px;
+                background-color: white;
+                margin: auto;
+            }
+
+            #container-a {
+                display: flex;
+                flex-wrap: wrap;
+                width: 403px;
+            }
+
+            #container-b {
+                display: flex;
+                flex-wrap: wrap;
+                width: 403px;
+            }
+
+            #one, #two, #five, #eight, #nine {
+                background-color: gray;
+                border: 2px solid black;
+                width: 175px;
+                height: 175px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #three {
+                background-color: gray;
+                border: 2px solid black;
+                width: 375px;
+                height: 155px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #four {
+                background-color: gray;
+                border: 2px solid black;
+                width: 355px;
+                height: 355px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #six {
+                background-color: gray;
+                border: 2px solid black;
+                width: 555px;
+                height: 175px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #seven {
+                background-color: gray;
+                border: 2px solid black;
+                width: 375px;
+                height: 155px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #ten {
+                background-color: gray;
+                border: 2px solid black;
+                width: 355px;
+                height: 355px;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                text-align: center;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                visibility: hidden;
+            }
+
+            #one:hover > .overlay {
+                visibility: visible;
+            }
+
+            #two:hover > .overlay {
+                visibility: visible;
+            }
+
+            #three:hover > .overlay {
+                visibility: visible;
+            }
+
+            #four:hover > .overlay {
+                visibility: visible;
+            }
+
+            #five:hover > .overlay {
+                visibility: visible;
+            }
+
+            #six:hover > .overlay {
+                visibility: visible;
+            }
+
+            #seven:hover > .overlay {
+                visibility: visible;
+            }
+
+            #eight:hover > .overlay {
+                visibility: visible;
+            }
+
+            #nine:hover > .overlay {
+                visibility: visible;
+            }
+
+            #ten:hover > .overlay {
+                visibility: visible;
+            }
+
+            #one > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #two > img {
+                width: 100%;
+                height: auto;
+            }
+            #three > img {
+                width: 100%;
+                height: auto;
+            }
+            #four > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 80px;
+            }
+            #five > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #six > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #seven > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 40px;
+            }
+
+            #eight > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #nine > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #ten > img {
+                width: 100%;
+                height: auto;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Gallery</h1>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="hobby.html">Home</a>
+                <ul id="dropdown">
+                    <li><a href="hobby.html#ideate">Ideation</a></li>
+                    <li><a href="hobby.html#draft"> Drafting</a></li>
+                    <li><a href="hobby.html#grade">Grading</a></li>
+                </ul>
+                </li>
+                <li><a id="highlight-nav" href="photogallery.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <h2>Paris Fashion Week 2023</h2>
+
+        <div id="img-placeholder">
+
+            <div id="container-a">
+
+                <div id="one"><img src="imgs/paris-one.webp" alt="one">
+                    <div class="overlay">Design by Jonathan Anderson</div>
+                </div>
+
+                <div id="two"><img src="imgs/paris-two.jpg" alt="two">
+                    <div class="overlay">Design by Jonathan Anderson</div>    
+                </div>
+
+                <div id="three"><img src="imgs/paris-three.jpg" alt="three">
+                    <div class="overlay">Designs by Lena Erziak</div>
+                </div>
+
+            </div>
+
+            <div id="four"><img src="imgs/paris-four.jpg" alt="four">
+                <div class="overlay">Design by Elie Saab</div>
+            </div>
+
+            <div id="five"><img src="imgs/paris-five.webp" alt="five">
+                <div class="overlay">Design by Victoria Beckham</div>
+            </div>
+
+            <div id="six"><img src="imgs/paris-six.jpg" alt="six">
+                <div class="overlay">Designs from a collection of designers</div>
+            </div>
+
+            <div id="container-b">
+
+                <div id="seven"><img src="imgs/paris-seven.jpg" alt="seven">
+                    <div class="overlay">Design by Viktor & Rolf</div>
+                </div>
+
+                <div id="eight"><img src="imgs/paris-eight.webp" alt="eight">
+                    <div class="overlay">Design by Thom Browne</div>
+                </div>
+
+                <div id="nine"><img src="imgs/paris-nine.webp" alt="nine">
+                    <div class="overlay">Design by Coperni</div>
+                </div>
+
+            </div>
+            
+            <div id="ten"><img src="imgs/paris-ten.png" alt="ten">
+                <div class="overlay">Design by Gaurav Gupta</div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>University of Southern California</p>
+        </footer>
+
+    </body>
+</html>

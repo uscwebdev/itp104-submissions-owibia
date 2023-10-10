@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Goldoni";
+    src: url(font/goldoni/Goldoni_DEMO.otf);
+}
+
+@font-face {
+    font-family: "Rozha-One";
+    src: url(font/Rozha_One/RozhaOne-Regular.ttf);
+}
+
+h1 {
+    font-family: "Goldoni", serif;
+}
+
+h2 {
+    color: black;
+    font-family: "Rozha-One", serif;
+    font-size: 140%;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+#navbar li {
+    background-color: rgb(46, 46, 46);
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar a {
+    color: white;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#navbar li:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    background-color: gainsboro;
+    color: black;
+}
+
+footer {
+    background-color: rgb(230, 107, 0);
+    width: 100vw;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 85%;
+    margin-top: -13px;
+}
+
+body {
+    background-color: rgb(255, 178, 36);
+    margin: auto;
+    width: 100vw;
+}
