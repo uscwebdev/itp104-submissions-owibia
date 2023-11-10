@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Photo Gallery</title>
+
+        <style>
+            #header {
+                text-align: center;
+                font-size: 200%;
+                color: white;
+            }
+
+            body {
+                background-color: rgb(98, 132, 99);
+            }
+            .photos {
+                display: flex;
+                justify-content: center;
+                transition: all 1s;
+            }
+
+            .photos:hover #cat-a {
+                transform: scale(1.5) rotate(-30deg) translate(-150px);
+            }
+
+            .photos:hover #cat-b {
+                transform: scale(1.5) rotate(-10deg);
+            }
+
+            .photos:hover #cat-c {
+                transform: scale(1.5) rotate(30deg) translate(100px);
+            }
+
+            img {
+                width: auto;
+                height: 300px;
+                border: 10px solid white;
+            }
+
+            #cat-a {
+                position: relative;
+                top: 100px;
+                left: 150px;
+                z-index: 1;
+                transform: rotate(-5deg);
+                transition: all 1s;
+            }
+
+            #cat-b {
+                position: relative;
+                top: 100px;
+                z-index: 2;
+                transform: rotate(5deg);
+                transition: all 1s;
+            }
+
+            #cat-c {
+                position: relative;
+                top: 100px;
+                right: 150px;
+                z-index: 3;
+                transform: rotate(10deg);
+                transition: all 1s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header"><h1>Cats in Hats</h1></div>
+        <div class="photos">
+            <img id="cat-a" src="imgs/cat_03.jpeg" alt="cat_01">
+            <img id="cat-b" src="imgs/cat_02.jpeg" alt="cat_02">
+            <img id="cat-c" src="imgs/cat_01.jpeg" alt="cat_03">
+        </div>
+    </body>
+</html>
