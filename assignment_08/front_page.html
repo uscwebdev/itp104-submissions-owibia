@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>My Digital Cookbook</title>
+
+        <meta name="description" content="Check out this online archive of my favorite dishes
+         with recipes so you can try them yourself! Let them cook!">
+
+        <style>
+            @font-face {
+                font-family: "Abril_Fatface";
+                src: url(fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: "Josefin_Sans";
+                src: url(fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+            }
+            
+
+            h1 {
+                font-family: "Abril_Fatface", serif;
+                font-size: 900%;
+                text-align: center;
+            }
+
+            p {
+                font-family: "Josefin_Sans", sans-serif;
+            }
+
+            .title {
+                width: 400px;
+                height: 400px;
+                background-color: rgb(255, 255, 255);
+                color: orange;
+                line-height: 1;
+            }
+
+            #navbar {
+                width: 900px;
+                font-family: "Josefin_Sans", sans-serif;
+                margin: auto;
+            }
+
+            #navbar ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                z-index: 1;
+            }
+
+            #navbar li {
+                background-color: rgb(215, 108, 0);
+                text-align: center;
+                position: relative;
+            }
+
+            #top-menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            #top-menu li {
+                width: 225px;
+            }
+
+            #top-menu ul {
+                position: absolute;
+                display: none;
+            }
+
+            #navbar a {
+                color: white;
+                display: block;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            #navbar li:hover > ul {
+                display: block;
+            }
+
+            #navbar a:hover, #navbar #highlight-nav {
+                background-color: rgb(255, 224, 178);
+                color: rgb(215, 108, 0);
+            }
+
+            .container-a {
+                display: flex;
+                flex-wrap: wrap;
+                width: 500px;
+                height: 500px;
+                justify-content: center;
+                margin: auto;
+            }
+
+            #one, #two, #three, #four {
+                width: 200px;
+                height: 200px;
+                margin: 12px;
+                background-color: gray;
+                overflow: hidden;
+            }
+
+            #one > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 25px;
+            }
+
+            #two > img {
+                width: auto;
+                height: 100%;
+            }
+
+            #three > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 35px;
+            }
+
+            #four > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 25px;
+            }
+            
+            .welcome-screen {
+                display: flex;
+                flex-wrap: wrap;
+                width: 900px;
+                margin: auto;
+            }
+
+            #welcome {
+                width: 860px;
+                height: 400px;
+                text-align: center;
+                line-height: 80px;
+                font-size: 250%;
+                color: white;
+                background-color: rgb(72, 21, 0);
+                padding: 20px;
+                margin: auto;
+            }
+
+            .container-b {
+                display: flex;
+                flex-wrap: wrap;
+                width: 850px;
+                height: 100px;
+                margin: auto;
+                padding: 25px;
+                text-align: center;
+                line-height: 1;
+                background-color: rgb(255, 236, 158);
+            }
+
+            #submission {
+                width: 390px;
+                margin: auto;
+                padding: 15px;
+            }
+
+            #social-media {
+                width: 390px;
+                margin: auto;
+                padding: 15px;
+            }
+
+
+
+        </style>
+
+    
+
+    </head>
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a id="highlight-nav" href="">Home</a>
+                <ul id="dropdown">
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#submission">Recipe Idea Submission</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+                </li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Submissions</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+
+        <div class="welcome-screen">
+
+        <div class="title">
+            <h1>Good Eats</h1>
+        </div>
+
+        <div class="container-a">
+
+            <div id="one"><img src="imgs/IMG_0559.jpeg" alt="one"></div>
+
+            <div id="two"><img src="imgs/IMG_0708.jpeg" alt="two"></div>
+
+            <div id="three"><img src="imgs/IMG_2584.jpeg" alt="three"></div>
+
+            <div id="four"><img src="imgs/IMG_7415.jpeg" alt="four"></div>
+        </div>
+        </div>
+
+        <div id="welcome">
+            <p>Hello! Welcome to Good Eats! Inspired by the show hosted 
+                by Alton Brown, this website will act as the digital 
+                archive for some of my favorite recipes!</p>
+        </div>
+
+
+        <div class="container-b">
+            <div id="submission">
+                <p>Do you have any dishes you would love to see a recipe for? 
+                    Click below to submit an idea for my next recipe?</p>
+            </div>
+
+            <div id="social-media">
+                <p>Find me on instagram @olivia_dien and tag me in any recipes 
+                    you've tried at home!</p>
+            </div>
+        </div>
+    </body>
+</html>
