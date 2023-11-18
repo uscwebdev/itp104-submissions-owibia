@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Puzzle</title>
+
+        <style>
+
+            h1 {
+                width: 900px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+
+            #img-flex {
+                width: 900px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+            }
+
+            #one-one {
+                position: relative;
+                top: 40px;
+                right: 60px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #one-three {
+                position: relative;
+                bottom: 20px;
+                right: 60px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #two-one {
+                position: relative;
+                bottom: 20px;
+                right: 30px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #two-two {
+                position: relative;
+                top: 35px;
+                left: 20px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #three-one {
+                position: relative;
+                top: 25px;
+                left: 55px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #three-three {
+                position: relative;
+                bottom: 40px;
+                left: 15px;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Flower Puzzle</h1>
+
+        <div id="img-flex">
+            <img id="one-one" src="imgs/row-1-column-1.jpg" alt="one-one">
+            <img src="imgs/row-1-column-2.jpg" alt="one-two">
+            <img id="one-three" src="imgs/row-1-column-3.jpg" alt="one-three">
+            <img id="two-one" src="imgs/row-2-column-1.jpg" alt="two-one">
+            <img id="two-two" src="imgs/row-2-column-2.jpg" alt="two-two">
+            <img src="imgs/row-2-column-3.jpg" alt="two-three">
+            <img id="three-one" src="imgs/row-3-column-1.jpg" alt="three-one">
+            <img src="imgs/row-3-column-2.jpg" alt="three-two">
+            <img id="three-three" src="imgs/row-3-column-3.jpg" alt="three-three">
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+        <script>
+            var $draggable = $('#img-flex > img').draggabilly({
+            // options...
+            })
+        </script>
+        
+    </body>
+</html>
