@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <style>
+
+            h1 {
+                background-color: rgb(255, 187, 104);
+            }
+
+            #content {
+                width: 100vw;
+                background-image: url(https://png.pngtree.com/background/20211216/original/pngtree-cute-cat-cartoon-style-background-picture-image_1526626.jpg);
+                background-size: cover;
+                text-align: center;
+                margin-top: -21px;
+                margin-bottom: -15px;
+
+            }
+
+            #content img {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 300px;
+                height: auto;
+                padding: 3px;
+                margin: 20px;
+            }
+
+            #content p {
+                visibility: hidden;
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 10px;
+            }
+
+            #hover img:hover + p {
+                visibility: visible;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            
+            <h1>Cats Available for Adoption</h1>
+
+            <div id="hover">
+                <img id="apple" src="https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/13719/2023/09/26/17/20230926171202.png" alt="Apple">
+                <p>Apple, with her round, adorable eyes and playful spirit, is a true delight that's ready to add a dash of sweetness to your life. 
+                    She's as crisp and refreshing as a freshly picked apple, and her charming personality is bound to make you fall in love.</p>
+                <img id="kiwi" src="https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/13719/2023/09/26/17/20230926170959.png" alt="Kiwi">
+                <p>Kiwi, with her vibrant and playful personality, is a burst of energy and sweetness in feline form. This delightful female kitten 
+                    is ready to bring a taste of tropical fun into your life.</p>
+                <img id="lime" src="https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/13719/2023/09/26/17/20230926171117.png" alt="Lime">
+                <p>Lime, with his spirited and vibrant personality, is a burst of energy and zest in feline form. This delightful male kitten is 
+                    ready to add a tangy twist of fun to your life.</p>
+                <img id="furanklin" src="https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/13719/2023/09/15/15/20230915154715.png" alt="Rosalind Furanklin">
+                <p>Rosalind Furanklin, with her strikingly big eyes and determined spirit, is a kitten who approaches every new adventure with a blend of curiosity 
+                    and caution. She's a one-of-a-kind explorer with a heart as big as her eyes, ready to share love and affection when she's not busy unraveling 
+                    the mysteries of the household.</p>
+                <img id="sapphire" src="https://sl-prod-v2-cdn.shelterluv.com/sites/default/files/animal_pics/13719/2023/09/20/12/20230920121459.png" alt="Sapphire">
+                <p>Meet Sapphire! This adorable female calico kitten is a symphony of colors and cuteness, a true masterpiece of feline charm that will melt your 
+                    heart with every whisker-twitch and purr.</p>
+            </div>
+        
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $('#apple').click(function(){
+                $('#content img').css('border', 'none');
+                $('#apple').css('border', '3px solid rgb(255, 187, 104)');
+            });
+
+            $('#kiwi').click(function(){
+                $('#content img').css('border', 'none');
+                $('#kiwi').css('border', '3px solid rgb(255, 187, 104)');
+            });
+
+            $('#lime').click(function(){
+                $('#content img').css('border', 'none');
+                $('#lime').css('border', '3px solid rgb(255, 187, 104)');
+            });
+
+            $('#furanklin').click(function(){
+                $('#content img').css('border', 'none');
+                $('#furanklin').css('border', '3px solid rgb(255, 187, 104)');
+            });
+
+            $('#sapphire').click(function(){
+                $('#content img').css('border', 'none');
+                $('#sapphire').css('border', '3px solid rgb(255, 187, 104)');
+            });
+        </script>
+
+    </body>
+</html>
