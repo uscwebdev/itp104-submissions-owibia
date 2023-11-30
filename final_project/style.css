@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Abril_Fatface";
+    src: url(fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Josefin_Sans";
+    src: url(fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+
+h1 {
+    display: inline-flex;
+    font-family: "Abril_Fatface", serif;
+    font-size: 900%;
+    text-align: center;
+    color: orange;
+}
+
+h2 {
+    font-family: "Abril_Fatface", serif;
+}
+
+p {
+    font-family: "Josefin_Sans", sans-serif;
+}
+
+#navbar {
+    width: 900px;
+    font-family: "Josefin_Sans", sans-serif;
+    margin: auto;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+#navbar li {
+    background-color: rgb(215, 108, 0);
+    text-align: center;
+    position: relative;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#top-menu li {
+    width: 225px;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar a {
+    color: white;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    background-color: rgb(255, 224, 178);
+    color: rgb(215, 108, 0);
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>My Digital Cookbook</title>
+
+        <meta name="description" content="Check out this online archive of my favorite dishes
+         with recipes so you can try them yourself! Let them cook!">
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+            .title {
+                width: 400px;
+                height: 400px;
+                background-color: rgb(255, 255, 255);
+                line-height: 1;
+            }
+
+            .container-a {
+                display: flex;
+                flex-wrap: wrap;
+                width: 500px;
+                height: 500px;
+                justify-content: center;
+                margin: auto;
+            }
+
+            #one, #two, #three, #four {
+                width: 200px;
+                height: 200px;
+                margin: 12px;
+                overflow: hidden;
+            }
+
+            #one > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 25px;
+            }
+
+            #two > img {
+                width: auto;
+                height: 100%;
+            }
+
+            #three > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 35px;
+            }
+
+            #four > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                bottom: 25px;
+            }
+            
+            .welcome-screen {
+                display: flex;
+                flex-wrap: wrap;
+                width: 900px;
+                margin: auto;
+            }
+
+            #welcome {
+                width: 860px;
+                height: 400px;
+                text-align: center;
+                line-height: 80px;
+                font-size: 250%;
+                color: rgb(43, 28, 0);
+                background-color: rgb(252, 205, 118);
+                padding: 20px;
+                margin: auto;
+            }
+
+            .container-b {
+                display: flex;
+                flex-wrap: wrap;
+                width: 850px;
+                height: 100px;
+                margin: auto;
+                padding: 25px;
+                text-align: center;
+                line-height: 1;
+                background-color: rgb(255, 236, 158);
+                color: rgb(43, 28, 0);;
+            }
+
+            #submission {
+                width: 390px;
+                margin: auto;
+                padding: 15px;
+            }
+
+            #social-media {
+                width: 390px;
+                margin: auto;
+                padding: 15px;
+            }
+
+
+
+        </style>
+
+    
+
+    </head>
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a id="highlight-nav" href="front_page.html">Home</a>
+                <ul id="dropdown">
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#submission">Recipe Idea Submission</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+                </li>
+                <li><a href="recipe.html">Recipes</a>
+                <ul id="dropdown-two">
+                    <li><a href="focaccia.html">Overnight Focaccia</a></li>
+                    <li><a href="bun-rieu.html">Bun Rieu</a></li>
+                    <li><a href="thit-kho.html">Thit Kho Truong</a></li>
+                    <li><a href="garlic-twist.html">Garlic & Chive Twist Buns</a></li>
+                </ul>
+                </li>
+                <li><a href="">Submissions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="welcome-screen">
+
+        <div class="title">
+            <h1>Good Eats</h1>
+        </div>
+
+        <div class="container-a">
+
+            <div id="one"><img src="imgs/IMG_0559.jpeg" alt="one"></div>
+
+            <div id="two"><img src="imgs/IMG_0708.jpeg" alt="two"></div>
+
+            <div id="three"><img src="imgs/IMG_2584.jpeg" alt="three"></div>
+
+            <div id="four"><img src="imgs/IMG_7415.jpeg" alt="four"></div>
+        </div>
+        </div>
+
+        <div id="welcome">
+            <p>Hello! Welcome to Good Eats! Inspired by the show hosted 
+                by Alton Brown, this website will act as the digital 
+                archive for some of my favorite recipes!</p>
+        </div>
+
+
+        <div class="container-b">
+            <div id="submission">
+                <p>Do you have any dishes you would love to see a recipe for? 
+                    Click below to submit an idea for my next recipe?</p>
+            </div>
+
+            <div id="social-media">
+                <p>Find me on instagram @olivia_dien and tag me in any recipes 
+                    you've tried at home!</p>
+            </div>
+        </div>
+    </body>
+</html>
