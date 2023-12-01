@@ -9,12 +9,14 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <link rel="stylesheet" href="js-plugins/fade-in-scroll-load/css/common.css">
+
+
         <style>
 
             .title {
                 width: 400px;
                 height: 400px;
-                background-color: rgb(255, 255, 255);
                 line-height: 1;
             }
 
@@ -23,8 +25,6 @@
                 flex-wrap: wrap;
                 width: 500px;
                 height: 500px;
-                justify-content: center;
-                margin: auto;
             }
 
             #one, #two, #three, #four {
@@ -60,58 +60,64 @@
                 bottom: 25px;
             }
             
-            .welcome-screen {
+            #welcome-screen {
                 display: flex;
                 flex-wrap: wrap;
                 width: 900px;
-                margin: auto;
+                padding-top: 50px;
             }
 
             #welcome {
                 width: 860px;
-                height: 400px;
+                height: 300px;
                 text-align: center;
                 line-height: 80px;
-                font-size: 250%;
+                font-size: 200%;
                 color: rgb(43, 28, 0);
                 background-color: rgb(252, 205, 118);
                 padding: 20px;
-                margin: auto;
-            }
-
-            .container-b {
-                display: flex;
-                flex-wrap: wrap;
-                width: 850px;
-                height: 100px;
-                margin: auto;
-                padding: 25px;
-                text-align: center;
-                line-height: 1;
-                background-color: rgb(255, 236, 158);
-                color: rgb(43, 28, 0);;
+                margin-top: 100px;
+                margin-bottom: 200px;
             }
 
             #submission {
-                width: 390px;
-                margin: auto;
-                padding: 15px;
+                width: 860px;
+                height: 300px;
+                text-align: center;
+                line-height: 80px;
+                font-size: 200%;
+                color: rgb(43, 28, 0);
+                background-color: rgb(252, 205, 118);
+                padding: 20px;
+                margin-bottom: 200px;
             }
 
             #social-media {
-                width: 390px;
-                margin: auto;
-                padding: 15px;
+                width: 860px;
+                height: 150px;
+                text-align: center;
+                line-height: 45px;
+                font-size: 200%;
+                color: rgb(43, 28, 0);
+                background-color: rgb(252, 205, 118);
+                padding: 20px;
             }
 
+            a {
+                color: rgb(43, 28, 0);
+            }
 
+            #main-container {
+                background-color: rgba(255, 255, 255, 0.8);
+                width: 900px;
+                margin: auto;
+            }
 
         </style>
 
-    
-
     </head>
     <body>
+        <div id="background">
         <div id="navbar">
             <ul id="top-menu">
                 <li><a id="highlight-nav" href="front_page.html">Home</a>
@@ -129,12 +135,14 @@
                     <li><a href="garlic-twist.html">Garlic & Chive Twist Buns</a></li>
                 </ul>
                 </li>
-                <li><a href="">Submissions</a></li>
+                <li><a href="submission.html">Submissions</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
 
-        <div class="welcome-screen">
+        <div id="main-container">
+
+        <div id="welcome-screen" class="u-fade-type-down js-scroll-trigger">
 
         <div class="title">
             <h1>Good Eats</h1>
@@ -151,24 +159,29 @@
             <div id="four"><img src="imgs/IMG_7415.jpeg" alt="four"></div>
         </div>
         </div>
-
-        <div id="welcome">
+    
+        <div id="welcome" class="u-fade-type-down js-scroll-trigger">
             <p>Hello! Welcome to Good Eats! Inspired by the show hosted 
                 by Alton Brown, this website will act as the digital 
                 archive for some of my favorite recipes!</p>
         </div>
 
+        <div id="submission" class="u-fade-type-down js-scroll-trigger">
+            <p>Do you have any dishes you would love to see a recipe for? 
+                Do you have any ideas to improve the existing recipes?
+                Click <a href="submission.html">here</a> to submit your thoughts!</p>
+        </div>
 
-        <div class="container-b">
-            <div id="submission">
-                <p>Do you have any dishes you would love to see a recipe for? 
-                    Click below to submit an idea for my next recipe?</p>
-            </div>
+        <div id="social-media" class="u-fade-type-down js-scroll-trigger">
+            <p>Find me on instagram @olivia_dien and tag me in any recipes 
+                you've tried at home!</p>
+        </div>
 
-            <div id="social-media">
-                <p>Find me on instagram @olivia_dien and tag me in any recipes 
-                    you've tried at home!</p>
-            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js-plugins/fade-in-scroll-load/js/script.js"></script>
+
+        </div>  
+
         </div>
     </body>
 </html>

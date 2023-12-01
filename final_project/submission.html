@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Submission Form</title>
+
+        <meta name="description" content="A form to submit any new recipe ideas or 
+        revision requests to any of the current recipes. Upon submission, the form 
+        will take the user to a confirmation page.">
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+            h1{
+                font-size: 250%;
+            }
+
+            #submit {
+                font-family: "Josefin_Sans", sans-serif;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.8);
+                width: 900px;
+                height: 900px;
+                margin: auto;
+            }
+
+            #submit input {
+                margin-bottom: 20px;
+            }
+
+            textarea, #title {
+                font-family: "Josefin_Sans", sans-serif;
+                padding: 15px;
+            }
+
+            #title {
+                width: 400px;
+                height: 15px;
+                text-align: center;
+            }
+
+            #background {
+                background-image: url(imgs/Doodle_Kitchen_590.jpg);
+            }
+
+            #submit-input, #reset-input {
+                font-family: "Josefin_Sans", sans-serif;
+                padding: 7px;
+                background-color: rgb(252, 205, 118);
+            }
+
+            #submit-input:hover, #reset-input:hover {
+                background-color: rgb(255, 193, 77);
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id="background">
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="front_page.html">Home</a>
+                <ul id="dropdown">
+                    <li><a href="front_page.html#welcome">Welcome</a></li>
+                    <li><a href="front_page.html#submission">Recipe Idea Submission</a></li>
+                    <li><a href="front_page.html#social-media">Social Media</a></li>
+                </ul>
+                </li>
+                <li><a href="recipe.html">Recipes</a>
+                <ul id="dropdown-two">
+                    <li><a href="focaccia.html">Overnight Focaccia</a></li>
+                    <li><a href="bun-rieu.html">Bun Rieu</a></li>
+                    <li><a href="thit-kho.html">Thit Kho Truong</a></li>
+                    <li><a href="garlic-twist.html">Garlic & Chive Twist Buns</a></li>
+                </ul>
+                </li>
+                <li><a id="highlight-nav" href="submission.html">Submissions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <form id="submit" action="confirmation.html">
+
+            <h1>Submit Recipe Ideas and Revisions Below!</h1>
+
+            <p>Would you like to submit a recipe or a revision?</p>
+
+            
+            <input id="radio-intent" type="radio" name="radio-intent">
+            <label for="radio-intent">Recipe</label>
+            <input id="radio-intent_2" type="radio" name="radio-intent">
+            <label for="radio-intent_2">Revision</label>
+
+            <p></p>
+            <label for="title">Recipe Name:</label>
+            <p></p>
+            <input type="text" id="title" placeholder="Recipe name needing revision or name for new recipe">
+
+            <p></p>
+            <label for="comments">Additional comments and/or requests</label>
+            <p></p>
+            <textarea id="comments" rows="10" cols="60" placeholder="Dietary restrictions, essential components, substitutions, etc"></textarea>
+
+            <p></p>
+            <button type="submit" id="submit-input">Submit</button>
+            <button type="reset" id="reset-input">Reset</button>
+        </form>
+
+        </div>
+    </body>
+</html>

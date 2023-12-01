@@ -74,3 +74,11 @@ p {
     background-color: rgb(255, 224, 178);
     color: rgb(215, 108, 0);
 }
+
+#background {
+    background-image: url(imgs/Doodle_Kitchen_590.jpg);
+}
+
+#background-2 {
+    background-image: url(imgs/orange-pieces-seamless-pattern-on-white-background-minimalistic-summer-citrus-fruit-background-design-for-menu-package-kitchen-textile-wrapping-paper-free-vector.jpg);
+}
